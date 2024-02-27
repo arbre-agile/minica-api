@@ -2,23 +2,26 @@
 name = "minica-api"
 version = "1.0.1"
 description = "A simple API to wrap jsha/minica"
-authors = ["Bjørn Snoen <bjorn.snoen@gmail.com>"]
+authors = [
+"Bjørn Snoen <bjorn.snoen@gmail.com>",
+"Alexandre BERREBI <alexandre.berrebi@arbreagile.fr>",
+]
 license = "GPLv3"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-fastapi = {extras = ["all"], version = "^0.70.0"}
-cryptography = "^35.0.0"
-toml = "^0.10.2"
-docker = "^5.0.3"
-supervisor = "^4.2.3"
+python = "^3.12"
+fastapi = { extras = ["all"], version = "^0.110" }
+cryptography = "^42.0"
+toml = "^0.10"
+docker = "^7.0"
+supervisor = "^4.2"
 minicapy = "^1.1.2"
-paho-mqtt = "^1.6.1"
-inflect = "^5.4.0"
+paho-mqtt = "^2.0"
+inflect = "^7.0"
 
 [tool.poetry.dev-dependencies]
-black = "^21.10b0"
-isort = "^5.10.1"
+black = "^24.2"
+isort = "^5.13"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
